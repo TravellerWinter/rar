@@ -1,0 +1,28 @@
+body,html
+{
+    height: 100%;
+   
+}
+
+
+#wrapper{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#box{
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#textbox{
+    padding: 20px;
+    margin: 20px;
+}

@@ -1,0 +1,6 @@
+https://www.unique-project.com/
+https://www.unique-project.com/css/animations.css
+https://www.unique-project.com/css/mobile.css
+https://www.unique-project.com/css/desktop.css
+https://www.unique-project.com/js/buttonControl.js
+https://www.unique-project.com/js/jquery-3.4.1.js

@@ -1,0 +1,29 @@
+body,html{
+    height: 100%;
+}
+
+body
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    text-align: center;
+}
+p{
+    padding-top: 100px;
+}
+
+#box{
+   background-color: gray;
+   padding: 70px;
+   border-radius: 8px;
+    
+    
+
+}
+
+

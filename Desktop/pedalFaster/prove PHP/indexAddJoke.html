@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add Joke</title>
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css" />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="boxPHP">
+            <p>Add a joke</p>
+            <form action="" method="post">
+                <fieldset>
+                    
+                    <input id="text" type="text" name="joketext" />
+                    <input id="submit" type="submit" value="Submit" />
+                    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <?php include "php/addFile.php"; echo $outputForm; ?>
+</body>
+</html>

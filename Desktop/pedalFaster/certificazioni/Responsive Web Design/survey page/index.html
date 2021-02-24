@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="survey">
+            <h1 id="title">High school Maironi da Ponte</h1>
+            <p id="description">Help us to improve our school making it beautiful</p>
+            <form id="survey-form" method="GET" action="">
+                <div>
+                    <label id="name-label">Name</label>
+                    <input type="text" id="name" required="required" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <label id="email-label">Email</label>
+                    <input type="email" id="email" required="required" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label id="number-label">Age (optional)</label>
+                    <input type="number" min="14" max="20" id="number" placeholder="Enter your age">
+                    
+                </div>
+                <div>
+                    <p><b>Select your course</b></p>
+                    <select id="dropdown" name="options" aria-placeholder="ciao">
+                        <option disabled selected value>Select your course</option>
+                        <option value="Science">Science</option>
+                        <option value="Literature">Literature</option>
+                        <option value="Accounting">Accounting</option>
+                    </select>
+
+                </div>
+                <div id="transport">
+                    <p><b>Do you have problems to reach school in the weekend?</b></p>
+                    <input id="1" type="radio" name="transport" value="Yes">
+                    <label for="1">Yes</label>
+                    <input id="2" type="radio" name="transport" value="Only in the morning">
+                    <label for="2">Only in the morning</label>
+                    <input id="3" type="radio" name="transport" value="Only in the afternoon">
+                    <label for="3">Only in the afternoon</label>
+                    <input id="4" type="radio" name="transport" value="No">
+                    <label for="4">No</label>
+                </div>
+                <div id="vehicle">
+                    <p><b>How do you reach the school?</b></p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">By feet</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">By car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">By bus</label><br> 
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">Other</label><br> 
+                </div>
+                <div>
+                    <p><b>if you have any suggestion or if you want to show off a problem here a space for you</b></p>
+                    <textarea maxlength="400"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Send the answers">
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

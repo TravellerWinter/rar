@@ -1,0 +1,45 @@
+body,html
+{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#box{
+    background-color: #fff8e7;
+}
+
+
+#header{
+    margin: 10px;
+}
+
+
+#box2 {
+    background-color: #A52A2A;
+    padding: 8px;
+    
+    
+}
+
+#note{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}

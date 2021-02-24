@@ -1,0 +1,185 @@
+body, html, #wrapper {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    z-index: -12;
+    
+}
+html{
+     
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+#timer {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#button, #zero{
+   margin-top: 2%;
+    width: 15%;
+    height: 85%;
+}
+#zero{
+    width: 16%
+}
+
+#options{
+    width: 5%;
+   display: flex;
+    justify-content: space-around;
+   
+}
+#options p{
+   
+}
+
+#zero{
+
+   
+    background-color: inherit;
+    box-shadow: none;
+    border: none;
+  
+}
+
+#zero:active{
+     background-color: inherit;
+    box-shadow: none;
+    border: none;
+
+}
+#zero:hover{
+     background-color: inherit;
+    box-shadow: none;
+    border: none;
+    
+}
+
+#clock{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+#values{
+  
+}
+
+#description{
+    
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  
+    align-items: flex-start;
+   
+   
+}
+
+#description>p{
+    width: 20%;
+   text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+}
+#h1{
+    color: #333333;
+    margin-left: 3%;
+}
+h3{
+    font-size: 1em;
+    color: #333333;
+    margin-left: 3%;
+    
+}
+#clock{
+    background-color: rgba(240, 57, 57, 0.1);
+    border-radius: 3vw;
+    text-align: center;
+}
+
+#plus{
+   width: 5%;
+    text-align: center;
+}
+
+#minus{
+     width: 5%;
+    text-align: center;
+}
+
+#controls{
+    margin-top: 20%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+
+header{
+    margin: 1%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    
+    
+}
+
+
+#headerTop{
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+ 
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: -1;
+    
+}
+
+
+#dH{
+   
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+#client{
+    z-index: 999;
+}
+#click{
+     color: #333333;
+    text-decoration: underline;
+}
+
+#s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

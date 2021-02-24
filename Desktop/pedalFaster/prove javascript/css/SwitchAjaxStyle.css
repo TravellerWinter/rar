@@ -1,0 +1,27 @@
+
+
+#wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#box {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    
+}

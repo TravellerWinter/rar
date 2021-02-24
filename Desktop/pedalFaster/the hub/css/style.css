@@ -1,0 +1,81 @@
+body
+{
+    background-color: silver !important;
+    width: 960px;
+    margin: 0px auto;
+    background:
+        url("../images/scribbles.jpg")
+        repeat
+        scroll;
+    
+}
+
+*{
+    text-align: center;
+    
+}
+
+.logo {
+    width: 960px;
+    max-width: 960px;
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    margin: 0px auto;
+    
+}
+
+#thehub{
+   width: 300px;
+   margin: 0px auto;
+      
+}
+
+
+img{
+    width: 620px;
+    height:450px;
+    margin: 20px;
+}
+
+.imgone{
+    border: 2px solid black;
+    width: 620px;
+    height:450px;
+    margin: inherit;
+    background-color: white;
+    
+}
+
+
+input{
+    text-indent: -9999px;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    background-image: url("../images/sprite.jpg");
+    background-position: 200px -100px;
+    
+}
+
+
+input:hover{
+       background-position: 200px -200px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

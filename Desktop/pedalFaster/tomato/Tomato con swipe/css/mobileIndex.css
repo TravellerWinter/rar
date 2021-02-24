@@ -1,0 +1,48 @@
+body, html, #wrapper
+{
+    height: 100%;
+    margin: 0px;
+    font-family: 'tai';
+    background-color: rgba(24,154,211,0.6);
+    overflow: hidden;
+    overscroll-behavior: none;
+    
+}
+body{
+    translateZ(0px);
+}
+
+#wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+   overflow: hidden;
+    
+}
+
+#caption{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    height: 30%;
+    font-family: "taiBold";
+    color: white;
+}
+
+
+#content{
+    position: absolute;
+   
+    height: 60%;
+    background-color: white;
+    border-radius: 30px 0px 0px 0px;
+    
+}
+
+
+
+

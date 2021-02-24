@@ -1,0 +1,28 @@
+body,html
+{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42,31,255, 0.2);
+}
+
+section {
+    background-color: rgba(42,31,255, 0.4);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    
+
+}
+
+p{
+    font-family: arial, sans-serif;;
+    font-size: 35px;
+}

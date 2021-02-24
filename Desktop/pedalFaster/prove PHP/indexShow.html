@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Joke List</title>
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css" />
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="boxPHP">
+            <p>Joke list</p>
+            <?php include "php/jokelist.php"; echo $outputText; ?>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/deleteForm.js"></script>
+</body>
+</html>

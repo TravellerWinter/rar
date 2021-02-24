@@ -1,0 +1,17 @@
+body, #wrapper, html
+{
+    height: 100%;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.jokes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

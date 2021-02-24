@@ -1,0 +1,28 @@
+body,html
+{
+    height: 100%;
+}
+
+
+#wrapper{
+    height: 100%;  /* tolto questo l'aggiunta di elementi in colonna aumenta l'altezza della pagina */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#box{
+    width: 30%;
+    height:200px;
+    background-color: antiquewhite;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+div input{
+    width: 20%;
+}

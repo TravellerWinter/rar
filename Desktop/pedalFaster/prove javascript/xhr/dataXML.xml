@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<events>
+
+  <event>
+    <location>San francisco</location>
+    <map>../images/millemiglia-terni.jpg</map>
+  </event>
+
+  <event>
+    <location>Austin</location>
+    <map>../images/deviazione.jpg</map>
+  </event>
+
+  <event>
+    <location>New york</location>
+    <map>../images/zambesi_mappa.png</map>
+  </event>
+  
+</events>

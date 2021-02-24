@@ -1,0 +1,36 @@
+body,html,#wrapper
+{
+    height: 100%;
+}
+
+#wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0,0,0,0.4);
+    box-shadow: rgba(0,0,0,0.5) 3px 3px 6px;
+}
+
+#submit{
+    margin-top: 6%
+}
+
+
+#psw, #text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-style: solid;
+    border-color: rgba(0,0,0,0.3);
+}

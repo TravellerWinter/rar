@@ -1,0 +1,334 @@
+.slide-in-left {
+    -webkit-animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-out-center {
+    -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.slide-out-left {
+    -webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.scale-in-center {
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.rotate-90-cw {
+    -webkit-animation: rotate-90-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-90-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.rotate-90-ccw {
+    -webkit-animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@media screen and (max-width: 780px) {
+    * {
+        font-family: tai;
+    }
+    #title{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a {
+        color: black;
+    }
+
+    body, html, #wrapper {
+        width: 100%;
+        margin: 0px;
+    }
+
+    html {
+        height: 100%;
+        background-color: #F1F1F1;
+    }
+
+
+
+
+
+
+
+
+    #wrapper {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #F1F1F1;
+    }
+
+
+
+
+
+
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+    #hamburger {
+        position: fixed;
+        z-index: 99;
+    }
+
+    .arrow {
+        width: 11%;
+        margin: 2%;
+    }
+
+
+
+    .title, .body {
+        padding-left: 2%;
+        padding-right: 2%
+    }
+
+    .color {
+    }
+
+    header {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+        background-color: #F1F1F1;
+    }
+
+    #banner {
+        height: 60%;
+        padding: 2%;
+        padding-left: 7%;
+        background-color: black;
+        color: white;
+        flex-flow: column;
+        display: none;
+    }
+
+    #flex-arrow img {
+        width: 30%;
+        justify-self: flex-start
+    }
+
+    #flex-arrow {
+        flex: 4;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .rectangle {
+        height: 50%;
+        width: 5%;
+        background-color: white;
+        margin-right: 2%
+    }
+
+    article {
+        width: 95%;
+    }
+
+    #indice {
+        font-size: 1.3em
+    }
+
+    #title {
+        font-size: 1.3em
+    }
+
+    #banner a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #line {
+        display: none;
+    }
+    
+    #post{
+    width: 100%;
+ 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.article{
+    width: 95%;
+
+    background-color: white;
+    text-align: justify;
+    box-shadow: 0px 0px 5px  rgba(0,0,0,0.7);
+    margin-bottom: 5%;    
+    
+        
+}
+    .leggi a{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:780px) {
+    * {
+        font-family: tai;
+    }
+
+    html {
+        background-color: #F1F1F1;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        box-shadow: none !important;
+    }
+
+    #navBar ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0px;
+    }
+
+        #navBar ul li {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center
+        }
+
+            #navBar ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+    #banner {
+        display: none;
+    }
+
+    #hamburger {
+        display: none
+    }
+
+    #wrapper {
+        width: 1000px
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #post {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+        #post a {
+            color: black;
+        }
+
+    #line {
+        display: inherit;
+        width: 100%
+    }
+     #el1{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #el2{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+       
+    }
+    
+    #el2 article{
+        margin-left: 0px
+    }
+    article{
+        width: 95%;
+        background-color: white;
+        text-align: justify;
+        box-shadow: 0px 0px 5px  rgba(0,0,0,0.7);
+        margin-bottom: 5%; 
+        max-width: 720px;
+        
+    }
+    .title, .body{
+        padding-left: 2%;
+        padding-right: 2%
+    }
+    
+    .leggi{
+        margin-top: 3%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .leggi a{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .leggi img{
+        width: 11%;
+        margin: 2%;
+    }
+}

@@ -1,0 +1,1 @@
+os.chdir("../../../../../Desktop/pedal faster/prova python/text")

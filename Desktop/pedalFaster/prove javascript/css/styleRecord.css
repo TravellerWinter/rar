@@ -1,0 +1,24 @@
+body,html,#wrapper
+{
+    height: 100%;
+}
+
+
+#wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+#recordButton{
+    width: 30%;
+    
+}
+
+#recordButtonDiv{
+    text-align: center;
+    margin-top: 3%;
+}

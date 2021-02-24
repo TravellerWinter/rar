@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="head"><h1>HTMl documentation.</h1></div>
+    
+    <div id="wrapper">
+        <nav id="navbar">
+            <header style="display: none;">HTMl documentation.</header>
+            <ul>
+                <li ><a class="nav-link" href="#THE_BASICS:_HEADINGS_AND_PARAGRAPHS">The basics: headings and paragraphs</a></li>
+                <hr>
+                <li ><a class="nav-link" href="#Implementing_structural_hierarchy">Implementing structural hierarchy</a></li>
+                <hr>
+                <li ><a class="nav-link" href="#Why_do_we_need_semantics?">Why do we need semantics?</a></li>
+                <hr>
+                <li ><a class="nav-link" href="#Emphasis_and_importance">Emphasis and importance</a></li>
+                <hr>
+                <li ><a class="nav-link" href="#Strong_importance">Strong importance</a></li>
+                <hr>
+                <li ><a class="nav-link" href="#Reference">Reference</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <main id="main-doc">
+
+           
+            <section id="THE_BASICS:_HEADINGS_AND_PARAGRAPHS" class="main-section">
+                <header><h1>The basics: headings and paragraphs</h1></header>
+                <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+                <p>Structured content makes the reading experience easier and more enjoyable.
+                    <br>
+                    In HTML, each paragraph has to be wrapped in a  &lt;p&gt; element, like so:</p>
+                <pre><code>&lt;p&gt;I am a paragraph, oh yes I am.&lt;/p&gt;</code></pre>
+                <p>Each heading has to be wrapped in a heading element:</p>
+                <pre><code>&lt;h1&gt;I am the title of the story.&lt;/h1&gt;</code></pre>
+                <p>There are six heading elements: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;. Each element represents a different level of content in the document; &lt;h1&gt; represents the main heading, &lt;h2&gt; represents subheadings, &lt;h3&gt; represents sub-subheadings, and so on.</p>
+            </section>
+            <section id="Implementing_structural_hierarchy" class="main-section">
+                <header><h1>Implementing structural hierarchy</h1></header>
+                <p>For example, in this story, the &lt;h1&gt; element represents the title of the story, the &lt;h2&gt; elements represent the title of each chapter, and the &lt;h3&gt; elements represent sub-sections of each chapter:</p>
+                <pre><code>&lt;h1&gt;The Crushing Bore&lt;/h1&gt;<br />&lt;p&gt;By Chris Mills&lt;/p&gt;<br />&lt;h2&gt;Chapter 1: The dark night&lt;/h2&gt;<br />&lt;p&gt;It was a dark night. Somewhere, an owl hooted. The rain lashed down on the ...&lt;/p&gt;<br>&lt;h2&gt;Chapter 2: The eternal silence&lt;/h2&gt;<br />&lt;p&gt;Our protagonist could not so much as a whisper out of the shadowy figure ...&lt;/p&gt;<br>&lt;h3&gt;The specter speaks&lt;/h3&gt;<br />&lt;p&gt;Several more hours had passed, when all of a sudden the specter sat bolt upright and exclaimed, &quot;Please have mercy on my soul!&quot;&lt;/p&gt;</code></pre>
+                
+              
+                           
+                <p>It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:</p>
+                <ul>
+                    <li>Preferably, you should use a single &lt;h1&gt; per page&mdash;this is the top level heading, and all others sit below this in the hierarchy.</li>
+                    <li>Make sure you use the headings in the correct order in the hierarchy. Don't use &lt;h3&gt; elements to represent subheadings, followed by &lt;h2&gt; elements to represent sub-subheadings&mdash;that doesn't make sense and will lead to weird results.</li>
+                    <li>Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (i.e., a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</li>
+                </ul>
+            </section>
+            <section id="Why_do_we_need_semantics?" class="main-section">
+                <header><h1>Why do we need semantics?</h1></header>
+                <p>Semantics are relied on everywhere around us—we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop," and a green traffic light to mean "go." Things can get tricky very quickly if the wrong semantics are applied. (Do any countries use red to mean "go"? We hope not.)<br> In a similar vein, we need to make sure we are using the correct elements, giving our content the correct meaning, function, or appearance. In this context, the &lt;h1&gt; element is also a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."
+                </p>
+                <pre><code>&lt;h1&gt;This is a top level heading&lt;/h1&gt;</code></pre>
+                <p>By default, the browser will give it a large font size to make it look like a heading (although you could style it to look like anything you wanted using CSS). More importantly, its semantic value will be used in multiple ways, for example by search engines and screen readers (as mentioned above).</p>
+                <p>On the other hand, you could make any element look like a top level heading. Consider the following:</p>
+                <pre><code>&lt;span style=&quot;font-size: 32px; margin: 21px 0; display: block;&quot;&gt;Is this a top level heading?&lt;/span&gt;</code></pre>
+                <p>This is a &lt;span&gt; element. It has no semantics. You use it to wrap content when you want to apply CSS to it (or do something to it with JavaScript) without giving it any extra meaning. (You'll find out more about these later on in the course.) We've applied some CSS to it to make it look like a top level heading, but since it has no semantic value, it will not get any of the extra benefits described above. It is a good idea to use the relevant HTML element for the job.</p>
+            </section>
+            <section id="Emphasis_and_importance" class="main-section">
+                <header><h1>Emphasis and importance</h1></header>
+                <p>In human language, we often emphasize certain words to alter the meaning of a sentence, and we often want to mark certain words as important or different in some way. HTML provides various semantic elements to allow us to mark up textual content with such effects, and in this section, we'll look at a few of the most common ones.</p>
+                <h2>Emphasis</h2>
+                <p>When we want to add emphasis in spoken language, we stress certain words, subtly altering the meaning of what we are saying. Similarly, in written language we tend to stress words by putting them in italics. For example, the following two sentences have different meanings.</p>
+                <ul>
+                    <li>I am glad you weren't late.</li>
+                    <li><em>I am glad you weren't late.</em></li>
+                </ul>
+                <p>The first sentence sounds genuinely relieved that the person wasn't late. In contrast, the second one sounds sarcastic or passive-aggressive, expressing annoyance that the person arrived a bit late.</p>
+                <p>In HTML we use the &lt;em&gt; (emphasis) element to mark up such instances. As well as making the document more interesting to read, these are recognized by screen readers and spoken out in a different tone of voice. Browsers style this as italic by default, but you shouldn't use this tag purely to get italic styling. To do that, you'd use a &lt;span&gt; element and some CSS, or perhaps an &lt;i&gt; element (see below).</p>
+                <pre><code>&lt;p&gt;I am &lt;em&gt;glad&lt;/em&gt; you weren't &lt;em&gt;late&lt;/em&gt;.&lt;/p&gt;</code></pre>
+                
+            </section>
+            <section id="Strong_importance" class="main-section">
+                <header><h1>Strong importance</h1></header>
+                <p>To emphasize important words, we tend to stress them in spoken language and bold them in written language. For example:</p>
+                <p>This liquid is <strong>highly toxic</strong>.</p>
+                <p>I am counting on you. <strong>Do not </strong>be late!</p>
+                <p>In HTML we use the &lt;strong&gt; (strong importance) element to mark up such instances. As well as making the document more useful, again these are recognized by screen readers and spoken in a different tone of voice. Browsers style this as bold text by default, but you shouldn't use this tag purely to get bold styling. To do that, you'd use a &lt;span&gt; element and some CSS, or perhaps a &lt;b&gt; element (see below).</p>
+                <pre><code>&lt;p&gt;This liquid is &lt;strong&gt;highly toxic&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;I am counting on you. &lt;strong&gt;Do not&lt;/strong&gt; be late!&lt;/p&gt;  </code></pre>
+                <p>You can nest strong and emphasis inside one another if desired:</p>
+                <pre><code>&lt;p&gt;This liquid is &lt;strong&gt;highly toxic&lt;/strong&gt;<br>&lt;p&gt;if you drink it, &lt;strong&gt;you may &lt;em&gt;die&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;</code></pre>
+                    
+            </section>
+            
+            <section id="Reference" class="main-section">
+                <header><h1>Reference</h1></header>
+                <p>The documentation is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals">MDN HTML text fundamentals</a></p>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>

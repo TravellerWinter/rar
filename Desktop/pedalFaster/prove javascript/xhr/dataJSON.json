@@ -1,0 +1,8 @@
+
+{
+   "events": [
+    {"location": "san francisco", "map": "../images/zambesi_mappa.png"},
+	  {"location": "austin", "map": "../images/deviazione.jpg"},
+	  {"location": "New York", "map": "../images/millemiglia-terni.jpg"}
+   ]
+}
